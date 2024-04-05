@@ -1,4 +1,4 @@
-#let conf(
+#let essay(
   title: "",
   author: "",
   info: [],
