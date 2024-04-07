@@ -4,7 +4,6 @@
   info: [],
   abstract: [],
   keywords: (),
-  ref_path: "",
   author_footnote: [],
   heading_numbering_array: ("I","A","1","a"),
   heading_suffix: ". ",
@@ -120,16 +119,20 @@
 
   set text(12pt)
 
-  doc
+  set bibliography(
+      style: "gb-7714-2015-numeric",
+      title: none
+  )
 
-  // (optional) reference
-  if ref_path != ""{
+  
+  show bibliography: bib =>{
     [\ \ ]
     line(length:50%)
-    bibliography(
-      style: "gb-7714-2015-numeric",
-      title: none,
-      ref_path
-    )
+    bib
   }
+  
+  doc
+
+  
+
 }
