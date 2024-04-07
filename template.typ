@@ -99,6 +99,7 @@
 
   // heading styling
   show heading: it =>{
+    set block(spacing: 2em)
     set par(first-line-indent: 0em)
     set text(
       if it.level == 1 {16pt} else if it.level == 2 {14pt} else {12pt},
