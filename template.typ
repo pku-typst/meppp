@@ -127,7 +127,7 @@
   
   show bibliography: bib =>{
     [\ \ ]
-    line(length:50%)
+    align(center,line(length:50%))
     bib
   }
   

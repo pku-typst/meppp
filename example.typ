@@ -1,15 +1,14 @@
-#import ("template.typ"):conf
+#import ("template.typ"):essay
 
 #let abstract=[
   这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。
 ]
 
-#show: doc => conf(
+#show: doc => essay(
   title: "这是实验标题",
   author: "我是作者",
   info: "这是作者信息",
   abstract: abstract,
-  ref_path: "example_ref.bib",
   keywords:(
     "this is keyword1",
     "this is keyword2"
@@ -36,3 +35,5 @@
 = 结论
   这是结论。这是结论。这是结论。这是结论。这是结论。这是结论。这是结论。这是结论。这是结论。这是结论。这是结论。这是结论。这是结论。这是结论。这是结论。这是结论。
   @kopka2004guide
+  
+#bibliography("example_ref.bib")
