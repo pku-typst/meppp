@@ -1,3 +1,5 @@
+#import "table.typ":tl-table
+
 #let essay(
   title: "",
   author: "",
@@ -96,6 +98,8 @@
     bookmarked: true
   )
 
+ 
+
   // heading styling
   show heading: it =>{
     set block(spacing: 2em)
@@ -132,7 +136,5 @@
   }
   
   doc
-
-  
 
 }
