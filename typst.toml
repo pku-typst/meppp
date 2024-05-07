@@ -1,9 +1,8 @@
 [package]
 name = "pkuphys-essay"
-version = "0.0.1"
+version = "0.0.2"
 authors = ["CL4R3T <https://github.com/CL4R3T>"]
 license = "MIT"
-description = "More powerful and customizable tables in Typst."
+description = "Template for writing essays and experiment reports."
 entrypoint = "template.typ"
 repository = "https://github.com/CL4R3T/pkuphys-essay-typst"
-keywords = ["formatting", "template", "essay"]
