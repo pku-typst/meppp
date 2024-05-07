@@ -1,14 +1,14 @@
-#import "table.typ":tl-table
+#import "table.typ":meppp-tl-table
 
-#let essay(
+#let meppp-lab-report(
   title: "",
   author: "",
   info: [],
   abstract: [],
   keywords: (),
-  author_footnote: [],
-  heading_numbering_array: ("I","A","1","a"),
-  heading_suffix: ". ",
+  author-footnote: [],
+  heading-numbering-array: ("I","A","1","a"),
+  heading-suffix: ". ",
   doc
 ) = {
 
@@ -56,11 +56,11 @@
   text(14pt, font:"STFangsong")[
     #author
   ]
-  if author_footnote != []{
+  if author-footnote != []{
     
     footnote(
       numbering:"*",
-      author_footnote
+      author-footnote
     )
   }
   [\ ]
@@ -92,8 +92,8 @@
     numbering: (..args) => {
       let nums = args.pos()
       let level = nums.len()-1
-      let num = numbering(heading_numbering_array.at(level),nums.at(level))
-      [#num#heading_suffix]
+      let num = numbering(heading-numbering-array.at(level),nums.at(level))
+      [#num#heading-suffix]
     },
     bookmarked: true
   )

@@ -1,11 +1,11 @@
 [package]
-name = "pkuphys-mpe"
+name = "meppp"
 version = "0.1.0"
 authors = ["CL4R3T <https://github.com/CL4R3T>"]
 license = "MIT"
-description = "Template for modern physics experiment reports in the Physics School of PKU."
-entrypoint = "template.typ"
-repository = "https://github.com/CL4R3T/PKUPhys-MPE-Typst"
+description = "Template for modern physics experiment reports at the Physics School of PKU."
+entrypoint = "lib.typ"
+repository = "https://github.com/CL4R3T/meppp"
 
 [template]
 path = "template"

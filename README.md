@@ -1,3 +1,2 @@
-# pkuphys-essay-typst
-简单好用的你北物院实验报告模板。
-该模板默认可直接被用作近代物理实验报告模板，你也可以改变其参数变成你想要的格式
+# meppp
+A simple template for modern physics experiments at the Physics School of PKU.

@@ -36,7 +36,7 @@
 }
 
 // A three-line-table returned as a figure
-#let tl-table(
+#let meppp-tl-table(
   caption: none,
   supplement: auto,
   stroke:0.5pt,
