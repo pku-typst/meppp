@@ -1,8 +1,13 @@
 [package]
-name = "pkuphys-essay"
-version = "0.0.2"
+name = "pkuphys-mpe"
+version = "0.1.0"
 authors = ["CL4R3T <https://github.com/CL4R3T>"]
 license = "MIT"
-description = "Template for writing essays and experiment reports."
+description = "Template for modern physics experiment reports in the Physics School of PKU."
 entrypoint = "template.typ"
-repository = "https://github.com/CL4R3T/pkuphys-essay-typst"
+repository = "https://github.com/CL4R3T/PKUPhys-MPE-Typst"
+
+[template]
+path = "template"
+entrypoint = "main.typ"
+thumbnail = "thumbnail.png"
