@@ -63,6 +63,21 @@ Example:
   )
 )
 ```
+## subfigure
+Counts subfigures and displays in the figure, mostly used when inserting multiple images.
+```typ
+#let subfigure(
+  body,
+  caption:none,
+  numbering:"(a)",
+  inside:true,
+  dx:10pt,
+  dy:10pt,
+  boxargs:(fill:white,inset:5pt),
+  alignment:top+left,
+)=...
+```
+
 
 ## pku-logo
 The logo of PKU, returned as a `image`

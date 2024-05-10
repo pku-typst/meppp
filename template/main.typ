@@ -1,4 +1,4 @@
-#import ("@preview/meppp:0.1.0"):*
+#import ("@preview/meppp:0.2.0"):*
 
 #let abstract=[
   这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。这是摘要。
@@ -31,6 +31,15 @@
   
 = 结果与讨论
 结果与讨论。这是结果与讨论。这是结果与讨论。这是结果与讨论。这是结果与讨论。这是结果与讨论。这是结果与讨论。这是结果与讨论。这是结果与讨论。这是结果与讨论。这是结果与讨论。
+#figure(
+  grid(
+    gutter:15pt,
+    columns:2,
+    subfigure(pku-logo()),subfigure(pku-logo()),subfigure(pku-logo()),subfigure(pku-logo()),
+  ),
+  caption:[logos]
+)
+
 #meppp-tl-table(table(
   columns:4,
   rows:2,
