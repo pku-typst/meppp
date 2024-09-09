@@ -8,7 +8,7 @@ The recommended report format of MPE course.
 Default arguments are shown as below:
 
 ```typ
-#import "@preview/meppp:0.1.0": *
+#import "@preview/meppp:0.2.0": *
 
 #let meppp-lab-report(
   title: "",
@@ -17,10 +17,10 @@ Default arguments are shown as below:
   abstract: [],
   keywords: (),
   author-footnote: [],
-  heading-numbering-array: ("I","A","1","a"),
+  heading-numbering-array: ("I" ,"A", "1", "a"),
   heading-suffix: ". ",
-  doc
-)=...
+  doc,
+) = ...
 ```
 
 - `title` is the title of the report.
@@ -50,9 +50,9 @@ Modify your input `table` to a three-lined table (AIP style), returned as a `fig
 #let meppp-tl-table(
   caption: none,
   supplement: auto,
-  stroke:0.5pt,
+  stroke: 0.5pt,
   tbl
-)=...
+) = ...
 ```
 
 - `caption` is the caption above the table, center-aligned
@@ -65,10 +65,10 @@ Example:
 ```typ
 #meppp-tl-table(
   table(
-    columns:4,
-    rows:2,
-    table.header([Item1],[Item2],[Item3],[Item4]),
-    [Data1],[Data2],[Data3],[Data4],
+    columns: 4,
+    rows: 2,
+    table.header([Item1], [Item2], [Item3], [Item4]),
+    [Data1], [Data2], [Data3], [Data4],
   )
 )
 ```
@@ -80,14 +80,14 @@ Counts subfigures and displays in the figure, mostly used when inserting multipl
 ```typ
 #let subfigure(
   body,
-  caption:none,
-  numbering:"(a)",
-  inside:true,
-  dx:10pt,
-  dy:10pt,
-  boxargs:(fill:white,inset:5pt),
-  alignment:top+left,
-)=...
+  caption: none,
+  numbering: "(a)",
+  inside: true,
+  dx: 10pt,
+  dy: 10pt,
+  boxargs: (fill: white, inset: 5pt),
+  alignment: top + left,
+) = ...
 ```
 
 ## pku-logo
@@ -95,12 +95,12 @@ Counts subfigures and displays in the figure, mostly used when inserting multipl
 The logo of PKU, returned as a `image`
 
 ```typ
-#let pku-logo(..args) = image("pkulogo.png",..args)
+#let pku-logo(..args) = image("pkulogo.png", ..args)
 ```
 
 Example:
 
 ``` typ
-#pku-logo(width:50%)
+#pku-logo(width: 50%)
 #pku-logo()
 ```
