@@ -1,6 +1,6 @@
 [package]
 name = "meppp"
-version = "0.2.0"
+version = "0.2.1"
 authors = ["CL4R3T <https://github.com/CL4R3T>"]
 license = "MIT"
 description = "Template for modern physics experiment reports at the Physics School of PKU."

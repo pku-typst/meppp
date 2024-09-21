@@ -1,5 +1,7 @@
 #import "table.typ": meppp-tl-table
 
+#import "@preview/cuti:0.2.1": show-cn-fakebold
+
 #let meppp-lab-report(
   title: "",
   author: "",
@@ -11,6 +13,9 @@
   heading-suffix: ". ",
   doc,
 ) = {
+
+  // Fake bold for Chinese characters
+  show: show-cn-fakebold
 
   // footnote settings
   show footnote.entry: set align(left)
