@@ -13,16 +13,17 @@
   heading-suffix: ". ",
   doc,
 ) = {
-
   // Fake bold for Chinese characters
   show: show-cn-fakebold
 
   // footnote settings
   show footnote.entry: set align(left)
-  set footnote.entry(separator: {
-    set align(left)
-    line(length: 30%)
-  })
+  set footnote.entry(
+    separator: {
+      set align(left)
+      line(length: 30%)
+    },
+  )
 
   set page(
     paper: "a4",
@@ -62,7 +63,6 @@
     #author
   ]
   if author-footnote != [] {
-
     footnote(
       numbering: "*",
       author-footnote,
@@ -85,9 +85,7 @@
         #h(2em)
         #abstract \ \
         #text(font: "SimHei")[*关键词:*]
-        #for keyword in keywords {
-          keyword + [, ]
-        }\
+        #keywords.join([，])\
       ],
     )
   }
@@ -104,7 +102,6 @@
   )
 
 
-
   // heading styling
   show heading: it => {
     set block(spacing: 2em)
@@ -118,7 +115,7 @@
         12pt
       },
       weight: "medium",
-      font: ("STFangsong"),
+      font: "STFangsong",
     )
     if it.numbering != none {
       counter(heading).display(it.numbering)
@@ -147,5 +144,4 @@
   }
 
   doc
-
 }
