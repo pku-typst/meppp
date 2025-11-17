@@ -46,6 +46,7 @@
   set par(
     first-line-indent: 2em,
     leading: 2em,
+    spacing: 2em,
     justify: true,
   )
 
