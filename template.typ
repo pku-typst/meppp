@@ -77,7 +77,7 @@
 
   // (optional) abstract & keywords
   set align(left)
-  if abstract != [] {
+  if abstract != [] and abstract != none {
     pad(
       left: 2em,
       right: 2em,
@@ -85,8 +85,10 @@
         \
         #h(2em)
         #abstract \ \
-        #text(font: "SimHei")[*关键词:*]
-        #keywords.join([，])\
+        #if keywords != () and keywords != none {
+          text(font: "SimHei")[*关键词:*]
+          keywords.join([，])
+        }
       ],
     )
   }
