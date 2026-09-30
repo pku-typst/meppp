@@ -1,4 +1,2 @@
 # Ignore all unnecessary PDF files
-table.pdf
-template.pdf
-lib.pdf
+*.pdf
